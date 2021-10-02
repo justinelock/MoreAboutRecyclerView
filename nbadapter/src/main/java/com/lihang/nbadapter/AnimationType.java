@@ -1,8 +1,7 @@
 package com.lihang.nbadapter;
 
 /**
- * Created by leo
- * on 2019/8/26.
+ * edit 2021.09.30
  */
 public enum AnimationType {
     TRANSLATE_FROM_RIGHT(R.anim.item_translate_byright),
@@ -12,6 +11,7 @@ public enum AnimationType {
     ALPHA(R.anim.item_alpha_anim);
 
     private int resId;
+
     AnimationType(int resId) {
         this.resId = resId;
     }

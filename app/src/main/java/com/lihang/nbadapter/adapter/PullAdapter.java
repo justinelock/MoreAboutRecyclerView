@@ -1,7 +1,8 @@
 package com.lihang.nbadapter.adapter;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.BaseAdapter;
 import com.lihang.nbadapter.R;
@@ -11,8 +12,7 @@ import com.lihang.nbadapter.viewholder.GridHolder;
 
 
 /**
- * Created by leo
- * on 2019/8/23.
+ * edit 2021.09.30
  */
 public class PullAdapter extends BaseAdapter<String> {
     @Override

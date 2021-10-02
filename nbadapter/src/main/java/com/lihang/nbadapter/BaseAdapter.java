@@ -1,10 +1,7 @@
 package com.lihang.nbadapter;
 
+import android.annotation.SuppressLint;
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +9,16 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
 import java.util.ArrayList;
 
 /**
  * NB 万能recyclerView适配器
- * Created by leo
- * on 2019/8/22.
+ * edit 2021.09.30
  */
 public abstract class BaseAdapter<T> extends RecyclerView.Adapter {
     //正常type 0;
@@ -137,7 +138,7 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter {
 
 
     @Override
-    public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder viewHolder, final int position) {
+    public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder viewHolder, @SuppressLint("RecyclerView") final int position) {
         //这里已经包括了TYPE_FOOT
         if (getItemViewType(position) <= TYPE_HEAD) return;
 

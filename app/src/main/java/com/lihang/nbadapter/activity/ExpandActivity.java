@@ -1,6 +1,6 @@
 package com.lihang.nbadapter.activity;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.BaseAdapter;
 import com.lihang.nbadapter.R;
@@ -14,8 +14,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 
 /**
- * Created by leo
- * on 2019/8/27.
+ * edit 2021.09.30
  */
 public class ExpandActivity extends BaseActivity implements BaseAdapter.OnItemClickListener {
     @BindView(R.id.recyclerView)

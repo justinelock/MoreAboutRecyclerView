@@ -21,11 +21,11 @@
         app:srlEnableAutoLoadMore="false"
         app:srlEnableLoadMoreWhenContentNotFull="true">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:overScrollMode="never"
-            app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 </RelativeLayout>

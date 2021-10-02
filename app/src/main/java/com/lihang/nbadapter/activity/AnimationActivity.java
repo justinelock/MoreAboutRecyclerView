@@ -7,10 +7,6 @@ import com.lihang.smartloadview.SmartLoadingView;
 
 import butterknife.BindView;
 
-/**
- * Created by leo
- * on 2019/8/22.
- */
 public class AnimationActivity extends BaseActivity {
 
     //这是我自定义view,现在用起来发现，代码确实比较麻烦，后期优化

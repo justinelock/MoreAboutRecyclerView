@@ -1,16 +1,14 @@
 package com.lihang.nbadapter.viewholder;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lihang.nbadapter.R;
 
 /**
- * Created by leo
- * on 2019/8/27.
+ * edit 2021.09.30
  */
 public class ExpandSonHolder extends RecyclerView.ViewHolder {
     public TextView txt_title;

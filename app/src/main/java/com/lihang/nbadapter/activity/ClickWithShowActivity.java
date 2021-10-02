@@ -1,6 +1,6 @@
 package com.lihang.nbadapter.activity;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.BaseAdapter;
 import com.lihang.nbadapter.R;
@@ -13,14 +13,14 @@ import java.util.ArrayList;
 import butterknife.BindView;
 
 /**
- * Created by leo
- * on 2019/8/26.
+ * edit 2021.09.30
  */
 public class ClickWithShowActivity extends BaseActivity {
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     private ShadowClickAdapter adapter;
     ArrayList<String> arrayList = new ArrayList<>();
+
     @Override
     public String getActivityTitle() {
         return getString(R.string.shadowclick_use);
@@ -40,7 +40,7 @@ public class ClickWithShowActivity extends BaseActivity {
         adapter.setOnItemClickListener(new BaseAdapter.OnItemClickListener<String>() {
             @Override
             public void onItemClick(String item, int position) {
-                ToastUtils.showToast(position+"");
+                ToastUtils.showToast(position + "");
             }
         });
         adapter.setDataList(arrayList);

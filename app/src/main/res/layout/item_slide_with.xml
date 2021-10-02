@@ -2,15 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="65dp"
-    android:clipChildren="false"
-    >
+    android:clipChildren="false">
 
     <RelativeLayout
-        android:clipChildren="false"
-        android:layout_above="@+id/line"
         android:id="@+id/slide_itemView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:clipChildren="false"
         android:tag="slide_flag">
 
         <TextView
@@ -19,15 +18,14 @@
             android:layout_height="match_parent"
             android:background="#fff"
             android:gravity="center"
-            android:text="item"
-            />
+            android:text="item" />
 
         <LinearLayout
-            android:layout_toRightOf="@+id/txt_text"
             android:id="@+id/slide"
-            android:clipChildren="false"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/txt_text"
+            android:clipChildren="false"
             android:orientation="horizontal">
 
             <TextView
@@ -53,9 +51,9 @@
 
     <TextView
         android:id="@+id/line"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="1px"
+        android:layout_alignParentBottom="true"
         android:background="#c6c6c6" />
 
 </RelativeLayout>

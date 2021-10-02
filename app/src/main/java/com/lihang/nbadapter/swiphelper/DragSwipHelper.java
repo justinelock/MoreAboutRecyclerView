@@ -1,10 +1,11 @@
 package com.lihang.nbadapter.swiphelper;
 
 import android.graphics.Color;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.BaseAdapter;
 import com.lihang.nbadapter.utils.LogUtils;
@@ -12,8 +13,7 @@ import com.lihang.nbadapter.utils.LogUtils;
 import java.util.Collections;
 
 /**
- * Created by leo
- * on 2019/8/27.
+ * edit 2021.09.30
  */
 public class DragSwipHelper {
     private ItemTouchHelper helper;

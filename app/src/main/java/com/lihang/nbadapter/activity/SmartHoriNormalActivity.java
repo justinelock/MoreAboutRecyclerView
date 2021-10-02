@@ -1,6 +1,6 @@
 package com.lihang.nbadapter.activity;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.R;
 import com.lihang.nbadapter.adapter.HoriAdapter;

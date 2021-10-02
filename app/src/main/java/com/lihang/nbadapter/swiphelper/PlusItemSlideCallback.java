@@ -1,8 +1,9 @@
 package com.lihang.nbadapter.swiphelper;
 
 import android.graphics.Canvas;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.base.SwipBaseHolder;
 

@@ -1,8 +1,9 @@
 package com.lihang.nbadapter.adapter;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.BaseAdapter;
 import com.lihang.nbadapter.R;
@@ -11,8 +12,7 @@ import com.lihang.nbadapter.viewholder.ExpandFarterHolder;
 import com.lihang.nbadapter.viewholder.ExpandSonHolder;
 
 /**
- * Created by leo
- * on 2019/8/22.
+ * edit 2021.09.30
  */
 public class ExpandAdapter extends BaseAdapter<Object> {
     final int TYPE_FATHER = 0;

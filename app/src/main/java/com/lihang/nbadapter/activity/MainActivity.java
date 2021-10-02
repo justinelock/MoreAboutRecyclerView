@@ -1,9 +1,11 @@
 package com.lihang.nbadapter.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.BaseAdapter;
 import com.lihang.nbadapter.R;
@@ -23,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         addData();
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = this.findViewById(R.id.recyclerViewMain);
+        //recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this, LinearLayoutManager.VERTICAL, false));
         adapter = new MainAdapter();
         setOnItemClick();
         adapter.setDataList(dataList);

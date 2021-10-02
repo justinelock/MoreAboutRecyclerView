@@ -3,12 +3,13 @@ package com.lihang.nbadapter.customview;
 import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.graphics.Rect;
-import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.util.SparseBooleanArray;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * <p>通过重写LayoutManger布局方法{@link #onLayoutChildren(RecyclerView.Recycler, RecyclerView.State)}

@@ -9,9 +9,8 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:scaleType="centerCrop"
-        app:border_color="#f17f7f"
-        app:border_width="2dp"
         android:src="@mipmap/girl_head"
-        />
+        app:border_color="#f17f7f"
+        app:border_width="2dp" />
 
 </RelativeLayout>

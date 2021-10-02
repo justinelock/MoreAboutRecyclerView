@@ -5,42 +5,38 @@
     android:layout_height="match_parent">
 
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:overScrollMode="never"
-        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-        ></android.support.v7.widget.RecyclerView>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
     <Button
         android:id="@+id/btn_remove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="移除头部"
-        />
+        android:text="移除头部" />
+
     <Button
-        android:layout_alignParentRight="true"
         android:id="@+id/btn_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="添加头部"
-        />
+        android:layout_alignParentRight="true"
+        android:text="添加头部" />
 
     <Button
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
         android:id="@+id/btn_addfoot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="添加底部"
-        />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="添加底部" />
 
     <Button
-        android:layout_alignParentBottom="true"
         android:id="@+id/btn_removefoot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="移除底部"
-        />
+        android:layout_alignParentBottom="true"
+        android:text="移除底部" />
 </RelativeLayout>

@@ -17,10 +17,11 @@
 package com.lihang.nbadapter.swiphelper;
 
 import android.graphics.Canvas;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
-import android.support.v7.widget.helper.ItemTouchUIUtil;
+
+import androidx.core.view.ViewCompat;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.ItemTouchUIUtil;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import com.lihang.nbadapter.R;

@@ -1,7 +1,6 @@
 package com.lihang.nbadapter.horismartrefresh;
 
 import android.animation.ValueAnimator;
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.AbsListView;
 
@@ -10,6 +9,8 @@ import com.scwang.smartrefresh.layout.impl.RefreshContentWrapper;
 import static com.lihang.nbadapter.horismartrefresh.ScrollBoundaryHorizontal.canScrollLeft;
 import static com.lihang.nbadapter.horismartrefresh.ScrollBoundaryHorizontal.canScrollRight;
 import static com.scwang.smartrefresh.layout.util.SmartUtil.scrollListBy;
+
+import androidx.annotation.NonNull;
 
 public class RefreshContentHorizontal extends RefreshContentWrapper {
 

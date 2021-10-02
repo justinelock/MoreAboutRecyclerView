@@ -12,10 +12,6 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 
-/**
- * Created by leo
- * on 2019/8/27.
- */
 public class FoldActivity extends BaseActivity {
     @BindView(R.id.relativeFlow)
     RecyclerFoldView relativeFlow;

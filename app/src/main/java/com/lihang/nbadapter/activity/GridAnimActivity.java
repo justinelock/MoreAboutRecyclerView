@@ -1,9 +1,10 @@
 package com.lihang.nbadapter.activity;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.AnimationType;
 import com.lihang.nbadapter.R;
@@ -16,8 +17,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * Created by leo
- * on 2019/8/26.
+ * edit 2021.09.30
  */
 public class GridAnimActivity extends BaseActivity {
     @BindView(R.id.recyclerView)

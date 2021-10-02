@@ -9,8 +9,7 @@
         android:layout_height="100dp"
         android:background="#ec5533"
         android:gravity="center"
-        android:text="我是头部"
         android:padding="15dp"
-        />
+        android:text="我是头部" />
 
 </RelativeLayout>

@@ -1,17 +1,15 @@
 package com.lihang.nbadapter.activity;
 
 import android.graphics.Color;
-import android.graphics.Rect;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.lihang.nbadapter.R;
 import com.lihang.nbadapter.adapter.GridAdapter;
 import com.lihang.nbadapter.base.BaseActivity;
-import com.lihang.nbadapter.utils.UIUtil;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -20,8 +18,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * Created by leo
- * on 2019/8/23.
+ * edit 2021.09.30
  */
 public class GridActivity extends BaseActivity {
     @BindView(R.id.recyclerView)
@@ -53,7 +50,7 @@ public class GridActivity extends BaseActivity {
 
         addHead();
         addFoot();
-        
+
     }
 
     @OnClick(R.id.btn_add)

@@ -1,12 +1,12 @@
 package com.lihang.nbadapter;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 /**
- * Created by leo
- * on 2019/8/22.
+ * edit 2021.09.30
  */
 public class HeadHolder extends RecyclerView.ViewHolder {
 

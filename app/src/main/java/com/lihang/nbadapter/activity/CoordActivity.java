@@ -1,13 +1,13 @@
 package com.lihang.nbadapter.activity;
 
-import android.support.design.widget.AppBarLayout;
-import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.appbar.AppBarLayout;
 import com.lihang.nbadapter.R;
 import com.lihang.nbadapter.adapter.SimpleAdapter;
 import com.lihang.nbadapter.base.BaseActivity;
-import com.lihang.nbadapter.utils.LogUtils;
 import com.lihang.nbadapter.utils.UIUtil;
 
 import java.util.ArrayList;

@@ -15,8 +15,6 @@ import butterknife.BindView;
 import se.emilsjolander.stickylistheaders.StickyListHeadersListView;
 
 /**
- * Created by leo
- * on 2019/8/28.
  * 优点：此粘性头部虽不是recyclerView实现，但是对于自定义的headView很好实现，以及不用考虑是否有图片问题
  * 缺点1：缺点也同时存在，就是如果有gridView网格。那么要在item里面嵌套gridView或者网格recyclerView。
  * 缺点2：如果是多type的的粘性头部，此方案暂未解决

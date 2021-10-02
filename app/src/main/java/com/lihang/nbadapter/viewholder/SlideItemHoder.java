@@ -1,17 +1,16 @@
 package com.lihang.nbadapter.viewholder;
 
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+
 import com.lihang.nbadapter.R;
 import com.lihang.nbadapter.base.SwipBaseHolder;
-import com.lihang.nbadapter.utils.UIUtil;
 
 /**
- * Created by leo
- * on 2019/8/27.
+ * edit 2021.09.30
  */
 public class SlideItemHoder extends SwipBaseHolder {
     public RelativeLayout slide_itemView;

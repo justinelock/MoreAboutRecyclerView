@@ -1,10 +1,11 @@
 package com.lihang.nbadapter.customview;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.MyApplication;
 import com.lihang.nbadapter.utils.UIUtil;
@@ -13,6 +14,7 @@ import com.lihang.nbadapter.utils.UIUtil;
 /**
  * 继承RecyclerView重写{@link #getChildDrawingOrder(int, int)}对Item的绘制顺序进行控制
  * 参考https://blog.csdn.net/harvic880925/article/details/86606873
+ * edit 2021.09.30
  */
 
 public class RecyclerFoldView extends RecyclerView {

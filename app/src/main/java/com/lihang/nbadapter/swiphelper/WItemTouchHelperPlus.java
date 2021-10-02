@@ -8,12 +8,13 @@ import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.v4.view.GestureDetectorCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchUIUtil;
+
+import androidx.annotation.Nullable;
+import androidx.core.view.GestureDetectorCompat;
+import androidx.core.view.ViewCompat;
+import androidx.recyclerview.widget.ItemTouchUIUtil;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.HapticFeedbackConstants;
@@ -25,6 +26,8 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Interpolator;
+
+import com.lihang.nbadapter.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -546,9 +549,9 @@ public class WItemTouchHelperPlus extends RecyclerView.ItemDecoration
         if (mRecyclerView != null) {
             final Resources resources = recyclerView.getResources();
             mSwipeEscapeVelocity = resources
-                    .getDimension(android.support.v7.recyclerview.R.dimen.item_touch_helper_swipe_escape_velocity);
+                    .getDimension(R.dimen.item_touch_helper_swipe_escape_velocity);
             mMaxSwipeVelocity = resources
-                    .getDimension(android.support.v7.recyclerview.R.dimen.item_touch_helper_swipe_escape_max_velocity);
+                    .getDimension(R.dimen.item_touch_helper_swipe_escape_max_velocity);
             setupCallbacks();
             mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
                 @Override
@@ -2045,7 +2048,7 @@ public class WItemTouchHelperPlus extends RecyclerView.ItemDecoration
         private int getMaxDragScroll(RecyclerView recyclerView) {
             if (mCachedMaxScrollSpeed == -1) {
                 mCachedMaxScrollSpeed = recyclerView.getResources().getDimensionPixelSize(
-                        android.support.v7.recyclerview.R.dimen.item_touch_helper_max_drag_scroll_per_frame);
+                        R.dimen.item_touch_helper_max_drag_scroll_per_frame);
             }
             return mCachedMaxScrollSpeed;
         }
@@ -2061,7 +2064,7 @@ public class WItemTouchHelperPlus extends RecyclerView.ItemDecoration
          * <p>
          * This method is responsible to give necessary hint to the LayoutManager so that it will
          * keep the View in visible area. For example, for LinearLayoutManager, this is as simple
-         * as calling {@link LinearLayoutManager#scrollToPositionWithOffset(int, int)}.
+         * as calling .
          * <p>
          * Default implementation calls {@link RecyclerView#scrollToPosition(int)} if the View's
          * new position is likely to be out of bounds.
@@ -2194,7 +2197,7 @@ public class WItemTouchHelperPlus extends RecyclerView.ItemDecoration
          * WItemTouchHelperPlus also takes care of drawing the child after other children if it is being
          * dragged. This is done using child re-ordering mechanism. On platforms prior to L, this
          * is
-         * achieved via {@link ViewGroup#getChildDrawingOrder(int, int)} and on L
+         * achieved via  and on L
          * and after, it changes View's elevation value to be greater than all other children.)
          *
          * @param c                 The canvas which RecyclerView is drawing its children

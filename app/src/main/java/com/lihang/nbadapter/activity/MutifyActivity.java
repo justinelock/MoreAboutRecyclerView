@@ -1,9 +1,8 @@
 package com.lihang.nbadapter.activity;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.lihang.nbadapter.R;
-import com.lihang.nbadapter.adapter.AnimationAdapter;
 import com.lihang.nbadapter.adapter.MutiAnimationAdapter;
 import com.lihang.nbadapter.base.BaseActivity;
 
@@ -12,14 +11,14 @@ import java.util.ArrayList;
 import butterknife.BindView;
 
 /**
- * Created by leo
- * on 2019/8/26.
+ * edit 2021.09.30
  */
 public class MutifyActivity extends BaseActivity {
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     private MutiAnimationAdapter adapter;
     ArrayList<String> arrayList = new ArrayList<>();
+
     @Override
     public String getActivityTitle() {
         return "多种动画";

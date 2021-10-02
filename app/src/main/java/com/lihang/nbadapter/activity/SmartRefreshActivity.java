@@ -7,10 +7,6 @@ import com.lihang.nbadapter.base.BaseActivity;
 
 import butterknife.OnClick;
 
-/**
- * Created by leo
- * on 2019/8/27.
- */
 public class SmartRefreshActivity extends BaseActivity {
     @Override
     public String getActivityTitle() {
